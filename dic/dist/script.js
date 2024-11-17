@@ -99,9 +99,5 @@ function playAudio(url) {
 }
 
 function copyText(text) {
-    navigator.clipboard.writeText(text).then(() => {
-        alert("Copied to clipboard!");
-    }).catch(() => {
-        alert("Failed to copy text.");
-    });
+    navigator.clipboard.writeText(text)
 }
